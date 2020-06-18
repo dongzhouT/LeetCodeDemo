@@ -35,6 +35,7 @@ captures/
 # IntelliJ
 *.iml
 .idea
+.idea/*.xml
 .idea/*
 .idea/vcs.xml
 .idea/modules.xml
