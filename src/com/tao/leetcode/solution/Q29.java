@@ -22,6 +22,7 @@ package com.tao.leetcode.solution;
 public class Q29 {
     public int divide(int dividend, int divisor) {
         // TODO: 2020/6/19
+        return 0;
 
     }
 
