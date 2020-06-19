@@ -16,7 +16,6 @@ public class Q125 {
             return true;
         }
         int start = 0, end = s.length() - 1;
-        boolean result = true;
         while (start < end) {
             while (start < s.length() && !Character.isLetterOrDigit(s.charAt(start))) {
                 start++;
@@ -34,7 +33,7 @@ public class Q125 {
             end--;
 
         }
-        return result;
+        return true;
 
     }
 
