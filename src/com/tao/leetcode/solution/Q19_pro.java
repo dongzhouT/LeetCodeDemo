@@ -10,14 +10,6 @@ package com.tao.leetcode.solution;
  * 当删除了倒数第二个节点后，链表变为 1->2->3->5.
  */
 public class Q19_pro {
-     class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-    }
 
     public ListNode removeNthFromEnd(ListNode head, int n) {
         ListNode dummy = new ListNode(0);
