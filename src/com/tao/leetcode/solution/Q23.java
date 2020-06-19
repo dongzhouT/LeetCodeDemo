@@ -16,15 +16,6 @@ import com.google.gson.Gson;
  * 输出: 1->1->2->3->4->4->5->6
  */
 public class Q23 {
-    static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-    }
-
     public ListNode mergeKLists(ListNode[] lists) {
         ListNode dummy = new ListNode(0);
         ListNode head = dummy;

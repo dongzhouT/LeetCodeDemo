@@ -1,9 +1,6 @@
 package com.tao.leetcode.solution;
 
-import sun.security.util.Length;
-
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -16,14 +13,6 @@ import java.util.List;
  * 当删除了倒数第二个节点后，链表变为 1->2->3->5.
  */
 public class Q19 {
-    class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-    }
 
     public ListNode removeNthFromEnd(ListNode head, int n) {
         ListNode oldHead = head;
