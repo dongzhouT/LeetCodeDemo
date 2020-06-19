@@ -1,5 +1,7 @@
 package com.tao.leetcode.solution;
 
+import com.google.gson.Gson;
+
 public class ListNode {
     int val;
     ListNode next;
@@ -17,5 +19,10 @@ public class ListNode {
             dummy = dummy.next;
         }
         return head.next;
+    }
+
+    @Override
+    public String toString() {
+        return new Gson().toJson(this);
     }
 }
