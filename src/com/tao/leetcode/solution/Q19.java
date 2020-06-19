@@ -16,7 +16,7 @@ import java.util.List;
  * 当删除了倒数第二个节点后，链表变为 1->2->3->5.
  */
 public class Q19 {
-    public class ListNode {
+    class ListNode {
         int val;
         ListNode next;
 
