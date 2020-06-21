@@ -2,6 +2,7 @@ package com.tao.leetcode.daka;
 
 
 import com.google.gson.Gson;
+import com.tao.leetcode.utils.TreeNode;
 
 import java.util.Deque;
 import java.util.LinkedList;
@@ -10,16 +11,6 @@ import java.util.LinkedList;
  * 1028. 从先序遍历还原二叉树
  */
 public class Q1028 {
-    class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
-    }
-
     public TreeNode recoverFromPreorder(String S) {
         Deque<TreeNode> path = new LinkedList<TreeNode>();
         int pos = 0;
