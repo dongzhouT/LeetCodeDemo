@@ -29,6 +29,25 @@ public class TreeNode {
         return list.get(0);
     }
 
+    // 递归生成树
+    public static TreeNode buildTree2(Integer[] datas) {
+        if (datas == null || datas.length == 0) {
+            return null;
+        }
+        TreeNode root = getSubTree(datas, 0);
+        return root;
+    }
+
+    public static TreeNode getSubTree(Integer[] datas, int index) {
+        if (index >= datas.length) {
+            return null;
+        }
+        TreeNode root = new TreeNode(datas[index]);
+        root.left = getSubTree(datas, 2 * index + 1);
+        root.right = getSubTree(datas, 2 * index + 2);
+        return root;
+    }
+
     //Breadth First Search(BFS)
     public static void bsf(TreeNode root) {
         if (root == null) {
@@ -52,8 +71,8 @@ public class TreeNode {
     }
 
     public static void main(String[] args) {
-        Integer[] trees = new Integer[]{1, 2, 3, 4, 5, 6, 7, 8, 9};
-        TreeNode root = buildTree(trees);
+        Integer[] trees = new Integer[]{1, 2, 3, 4, 0, 0, 5, 6, 7, 0, 8, 9};
+        TreeNode root = buildTree2(trees);
         System.out.println(GsonUtils.toJson(root));
         bsf(root);
     }
