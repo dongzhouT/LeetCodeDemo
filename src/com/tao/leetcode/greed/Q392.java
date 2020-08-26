@@ -1,5 +1,8 @@
 package com.tao.leetcode.greed;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * 392. 判断子序列
  * 给定字符串 s 和 t ，判断 s 是否为 t 的子序列。
@@ -41,8 +44,22 @@ public class Q392 {
     }
 
     public static void main(String[] args) {
-        String s = "abc", t = "ahbdc";
+        String s = " ", t = "ahbdc";
+        String aa = "a\b";
+        System.out.println(aa.indexOf('\0'));
+        System.out.println("\\\0");
 
         System.out.println(new Q392().isSubsequence(s, t));
+        List<String> aList=new ArrayList();
+        List<String> bList=aList;
+        aList.add("1");
+        aList.add("1");
+        aList.add("1");
+        System.out.println(bList.size());
+
+        for(String item:bList){
+
+        }
+
     }
 }
